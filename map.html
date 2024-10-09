@@ -1,0 +1,92 @@
+{% extends "turningtide/base.html" %}
+{% load static %}
+
+{% block title %}
+ngo  page
+{%endblock%}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'turningtide/ngos.css' %}"/>
+
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai Water Pollution Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mumbai Water Pollution Map</h1>
+    <div id="map"></div>
+
+    <!-- Include Leaflet JS library -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- Include your pollution data here, or fetch it from an API -->
+    <script>
+        // Initialize the map centered at Mumbai
+        var map = L.map('map').setView([19.0760, 72.8777], 11); // Latitude and Longitude of Mumbai
+
+        // Add the tile layer from OpenStreetMap (or other providers)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        }).addTo(map);
+
+        // Example pollution data for 10+ beaches in Mumbai
+        var pollutionData = [
+            { name: "Juhu Beach", coords: [19.0974, 72.8260], pollutionLevel: 7.8 },
+            { name: "Versova Beach", coords: [19.1332, 72.8096], pollutionLevel: 8.1 },
+            { name: "Girgaon Chowpatty", coords: [18.9543, 72.8126], pollutionLevel: 9.0 },
+            { name: "Dadar Beach", coords: [19.0277, 72.8360], pollutionLevel: 8.5 },
+            { name: "Madh Island", coords: [19.1337, 72.7955], pollutionLevel: 6.7 },
+            { name: "Aksa Beach", coords: [19.1750, 72.7958], pollutionLevel: 7.2 },
+            { name: "Marvé Beach", coords: [19.1614, 72.7933], pollutionLevel: 8.0 },
+            { name: "Manori Beach", coords: [19.2143, 72.8057], pollutionLevel: 6.5 },
+            { name: "Gorai Beach", coords: [19.2363, 72.7837], pollutionLevel: 5.9 },
+            { name: "Marine Drive", coords: [18.9431, 72.8236], pollutionLevel: 9.2 }
+        ];
+
+        // Function to get color based on pollution level
+        function getColor(pollutionLevel) {
+            return pollutionLevel > 8 ? 'red' :
+                   pollutionLevel > 6 ? 'orange' :
+                   pollutionLevel > 4 ? 'yellow' :
+                   'green';
+        }
+
+        // Loop through the pollution data and add markers to the map
+        pollutionData.forEach(function(beach) {
+            L.circleMarker(beach.coords, {
+                radius: 10,
+                color: getColor(beach.pollutionLevel),
+                fillColor: getColor(beach.pollutionLevel),
+                fillOpacity: 0.5
+            })
+            .bindPopup("<b>" + beach.name + "</b><br>Pollution Level: " + beach.pollutionLevel)
+            .addTo(map);
+        });
+
+        fetch('https://your-pollution-api.com/mumbai')
+    .then(response => response.json())
+    .then(data => {
+        // Process and update the map with real-time pollution data
+    });
+    </script>
+</body>
+</html>
+   
+{%endblock%}

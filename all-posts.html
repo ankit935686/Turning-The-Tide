@@ -1,0 +1,23 @@
+{% extends "turningtide/base.html" %}
+{% load static %}
+
+{% block title %}
+My Blog
+{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'turningtide/post.css' %}"/>
+<link rel="stylesheet" href="{% static 'turningtide/all-posts.css' %}"/>
+{% endblock %}
+
+{% block content %}
+<section id="all-posts">
+    <h2>My Collected Posts</h2>
+    <ul>
+        {% for post in all_posts %}
+        {% include 'turningtide/includes/post.html'%}
+        {% endfor %}
+      
+    </ul>
+</section>    
+{%endblock%}
