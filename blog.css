@@ -1,0 +1,905 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;  
+    background-color: #f0f8ff;  
+  }
+  .hero-section {
+    background-image: url('https://ubet123.github.io/TurningTide.web/Reasons_Why_Beach_Clean-Ups_Important_1200x1200.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 400px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: white; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    border-color: #0a9396;
+  }
+  *{
+    text-decoration: none;
+  }
+  
+  .project-title {
+    font-size: 58px; 
+    font-weight: 700; 
+    text-align: center;
+    color:white;
+  }
+  
+  
+  h1, h2, h3 {
+    color: #005f73;  
+  }
+  
+  p, li, label {
+    color: #333;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #005f73;
+    color: white;
+    padding: 15px 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+  }
+  
+  .navbar .nav-left {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-center a:hover,
+  .navbar .login-icon:hover {
+    background-color: #0a9396;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  
+  /* Sidebar Styles */
+  .dashboard-sidebar {
+    width: 220px;
+    background: linear-gradient(180deg, #005f73, #0a9396);
+    position: absolute;
+    height: auto;
+    padding-top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+  
+  .dashboard-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #e9d8a6; 
+  }
+  
+  .sidebar-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 80%;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar-item h3 {
+    margin: 10px 0;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #e9d8a6; 
+    transform: translateY(-5px); 
+    color: #005f73;
+  }
+  .sidebarhead{
+    color:white;
+  }
+  /* Main Content Area */
+  .main-content {
+    margin-left: 240px; 
+    padding: 20px;
+  }
+  
+  .projecttitle1{
+    font-size: 80px;
+    font-weight: 600;
+  }
+  .main-content h1 {
+    color: #005f73;
+  }
+  
+  .main-content p {
+    color: #333;
+  }
+  /* Main Content */
+  .main-content {
+    margin-left: 220px;
+    padding: 20px;
+  }
+  
+  
+  #problem, #objectives, #sdg-goals {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #cae9ff;
+    border-radius: 8px;
+  }
+  .problemsec{
+    display: flex; 
+      align-items: center;
+      gap:10px;
+  }
+  .problemsec img{
+    height:12rem;
+    width:15rem;
+    border-radius: 5px;
+    border-color: #005f73;
+    border-width: 2px;
+    border-style: solid;
+  }
+  .problempara {
+    width: 70%; 
+    margin-right: 20px; 
+  }
+  .problemimg {
+    width: 30%; 
+    height: 10rem; 
+    border-radius: 5px; 
+    position: relative;
+    bottom:3rem;
+    
+  }
+  
+  #objectives span{
+    font-weight: 800;
+  }
+  
+  .sdgimg{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,4fr);
+    column-gap: 10px;
+    align-content: center;
+  }
+  
+  .sdgimg img{
+    width:180px;
+    height:185px;
+    border-radius: 8px;
+    border-color: #0a9396;
+    border-width: 3px;
+    border-style: solid;
+  }
+  /* Footer */
+  .footer {
+    background-color: #005f73;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #94d2bd;
+  }
+  
+  .footer a:hover {
+    color: #e9d8a6;
+  }
+  
+  /* Blog Page Styles */
+  
+  .blogspage{
+    
+      margin: 0;
+      padding: 0;
+      font-family: 'Fredoka', sans-serif;  
+      background-image: url('Reasons_Why_Beach_Clean-Ups_Important_1200x1200.webp'); 
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      color: #333; 
+  
+     
+  
+  }
+  .blogs-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .blogs-container span{
+    font-size: 15px;
+    font-weight: 800;
+  }
+  
+  .blog-entry {
+    width: 45%;
+    background-color: #41d8f0
+    ;
+    margin: 15px;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-img {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin: 10px 0; 
+  }
+  
+  
+  /* Map Page Styles */
+  .map-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .map-img {
+    width: 80%;
+    height: auto;
+    border: 5px solid #005f73;
+    border-radius: 8px;
+  }
+  
+  
+  /* Eco Shop Page Styles */
+  .product-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    column-gap: 1rem; 
+    row-gap: 1rem; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 1rem; 
+  }
+  
+  .card {
+    margin: 0; 
+    padding: 20px;
+    background-color: #f4a261;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+  }
+  .card:hover{
+    box-shadow: 2px 2px 2px 3px  #005f73;
+  }
+  
+  .card-img {
+    width: 70%; 
+    height: 200px;
+    border-radius: 9px;
+    border: 2px solid rgba(0, 255, 255, 0.856);
+  }
+  
+  #price {
+    font-weight: 800;
+  }
+  
+  
+  #price del {
+    text-decoration: line-through; 
+    color: red; 
+    margin-right: 5px; 
+  }
+  
+  
+  .buy-btn {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  
+  .buy-btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  
+  /* Login Page Styles */
+  .login-page {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+    background-image: url('pexels-anntarazevich-8152030.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+   
+  }
+  
+  
+  .login-blur-container {
+    width: 350px; 
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    color: white; 
+    text-align: center; 
+    margin-top: 2rem;
+    margin-bottom: 0px;
+   
+  }
+  
+  /* Login Form Styles */
+  .login-form label {
+    display: block;
+    margin: 10px 0 5px 0;
+  }
+  
+  .login-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3); 
+    color: white; 
+  }
+  
+  .login-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7); 
+  }
+  
+  .submit-btn {
+    background-color: #005f73;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0a9396;
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .login-blur-container {
+        width: 90%; 
+        padding: 20px; 
+    }
+  }
+  /* Leaderboard Styles */
+  .leaderboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .leaderboard-table {
+    width: 60%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  .leaderboard-table th, .leaderboard-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .leaderboard-table th {
+    background-color: #005f73;
+    color: white;
+  }
+  
+  /* Cleanup Drive Section Styles */
+  .cleanup-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  .cleanup-table th, .cleanup-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+  }
+  
+  .cleanup-table th {
+    background-color: #005f73;
+    color: white;
+  }
+  
+  .participate-btn {
+    padding: 10px;
+    background-color: #0a9396;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .participate-btn:hover {
+    background-color: #cae9ff;
+  }
+  
+  
+  .contribution-main-content {
+    margin-left: 220px; 
+    padding: 20px;
+  }
+  
+  
+  .contribution-hero-section {
+    background-image: url('cleanup2.webp');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white; 
+    height: 400px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  }
+  
+  
+  .contribution-title, h2 {
+    color: #005f73;
+  }
+  
+  
+  .cleanup-drives-list, .donations-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cleanup-drives-list li, .donations-list li {
+    background-color: #cae9ff; 
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .donations-list span{
+    font-size: 30px;
+    color: green;
+    font-weight: 600;
+  
+  }
+  
+  .contribution-hero-section{
+    background-image: url('cleanup2.webp'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding: 20px;
+    border-radius: 10px; 
+    
+  }
+  
+  .contribution-title{
+    color:rgba(19, 6, 143, 0.897);
+    font-size: 5rem;
+  }
+  
+  .contribution-image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+  }
+  
+  .contribution-img {
+    width: 150px; 
+    height: 100px; 
+    border-radius: 5px; 
+    object-fit: cover; 
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #005f73;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #94d2bd;
+  }
+  
+  .footer a:hover {
+    color: #e9d8a6;
+  }
+  
+  /* Leaderboard Section Styles */
+  #leaderboard-section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #1c1c1c; 
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+  }
+  
+  h2 {
+    color: #f4a261; 
+    text-align: center; 
+    font-size: 2em; 
+    margin-bottom: 20px; 
+  }
+  
+  .leaderboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .leaderboard-table {
+    width: 80%; 
+    border-collapse: collapse; 
+    margin: 20px 0; 
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px; 
+  }
+  
+  .leaderboard-table th, .leaderboard-table td {
+    border: 1px solid #005f73; 
+    padding: 12px; 
+    text-align: center; /
+    transition: background-color 0.3s ease; 
+    color: #f4f4f4; 
+  }
+  
+  .leaderboard-table th {
+    background-color: #005f73; 
+    color: #ffffff;
+  }
+  
+  .leaderboard-table tbody tr {
+    transition: background-color 0.3s ease; 
+  }
+  
+  .leaderboard-table tbody tr:hover {
+    background-color: rgba(10, 147, 150, 0.3); 
+  }
+  
+  .leaderboard-table tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.05); 
+  }
+  
+  .current-user {
+    background-color: #f4a261; 
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center; 
+    margin-top: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .current-user p {
+    margin: 5px 0; 
+    font-weight: bold; 
+    font-size: 1.2em; 
+  }
+  
+  /* Points Section Styles */
+  .points-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #005f73; 
+    color: white;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%; 
+  }
+  
+  .prize-icon {
+    width: 40%; 
+    height: 40%;
+  }
+  .points-earned{
+    color:white;
+  }
+  
+  /* Prizes Container Styles */
+  .prizes-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    gap: 50px; 
+    row-gap: 90px;
+    padding: 20px;
+  }
+  
+  /* Prize Card Styles */
+  .prize-card {
+    background-color: #e9d8a6; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    padding: 7px;
+    text-align: center;
+    height:30rem;
+    transition: transform 0.3s ease; 
+  }
+  
+  .prize-card:hover {
+    transform: translateY(-5px); 
+  }
+  
+  .prize-image {
+    width: 40%; 
+    height: 50%; 
+    border-radius: 5px; 
+  }
+  
+  /* Button Styles */
+  .apply-button {
+    background-color: black; 
+    width:6rem;
+    height:2.5rem;
+    color: white;
+    padding: 7px 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; 
+    transition: background-color 0.3s ease; 
+  }
+  .pointsreq{
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .apply-button:hover {
+    background-color: white;
+    color:black; 
+  }
+  
+  /* Table Section Styles */
+  .table-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    width: 80%; 
+    background-color: #f0f8ff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .table-title {
+    font-size: 2em;
+    color: #005f73; 
+    margin-bottom: 20px; 
+    font-weight: bold;
+  }
+  
+  /* Cleanup Drives Table Styles */
+  .cleanup-drives-table {
+    width: 100%;
+    border-collapse: collapse; 
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .cleanup-drives-table th, .cleanup-drives-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .cleanup-drives-table th {
+    background-color: #005f73; 
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    font-weight: 600; 
+  }
+  
+  .cleanup-drives-table tbody tr:nth-child(odd) {
+    background-color: #cae9ff; 
+  }
+  
+  .cleanup-drives-table tbody tr:nth-child(even) {
+    background-color: #94d2bd; 
+  }
+  
+  .cleanup-drives-table tbody tr:hover {
+    background-color: rgba(10, 147, 150, 0.2); 
+  }
+  
+  .cleanup-drives-table td {
+    color: #333; 
+    font-size: 1em;
+  }
+  
+  
+  .register-btn {
+    padding: 10px 15px;
+    background-color: #005f73; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+  }
+  
+  .register-btn:hover {
+    background-color: #0a9396; 
+    transform: translateY(-2px); 
+  }
+  
+  .register-btn:active {
+    background-color: #00363a; 
+    transform: translateY(0); 
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #005f73;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #94d2bd;
+  }
+  
+  .footer a:hover {
+    color: #e9d8a6;
+  }
+  
+  .ngo-item{
+    margin-top: 2rem;
+    border: 4px solid rgba(12, 224, 231, 0.795);
+    border-radius: 15px;
+    width:32rem;
+    background-color: rgb(117, 236, 117);
+  }
+  
+  .ngo-item h2{
+    text-align: left;
+    color: #005f73;
+    padding-left:20px;
+  }
+  .ngo-item img{
+    width:510px;
+    height:200px;
+    border-top:2px black solid;
+    border-radius: 5px;
+  }
+  
+  .ngo-item:hover{
+    box-shadow: 2px 2px 9px 7px #333;
+  }
+  
+  .ngobg{
+    
+      background-image: url('partnership.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      
+  
+  }
+  
+  .ngo-item button{
+    padding: 12px;
+    margin: 8px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+  }
+  
+  #readmore{
+    background-color: #005f73;
+  }
+  
+  #readmore:hover{
+    background-color: white;
+    color: black;
+  }
+  
+  .ngo-item button:hover{
+    background-color: white;
+    color: black;
+  }
+
+  /* Post Input Section */
+.post-input-section {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #005f73;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+#blogInput {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+#postButton {
+    padding: 10px 20px;
+    background-color: #0a9396;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#postButton:hover {
+    background-color: #cae9ff;
+}
+
+.like-button, .comment-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.like-button:hover, .comment-button:hover {
+    background-color: #45a049; /* Darker green */
+}
